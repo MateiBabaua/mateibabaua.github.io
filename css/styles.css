@@ -2776,13 +2776,17 @@ td:last-child {
 	padding-right: 50px;
 }
 
-.social-item a {
-	padding-top: 3rem;
+.social-item img {
+	margin-right: 5px;
+}
+
+.social-item p {
+	margin: auto;
 }
 
 .social-list li {
 	padding-left: 0;
-	margin-right: 1.2rem;
+
 }
 
 .social-list li:last-child {
@@ -2808,130 +2812,6 @@ td:last-child {
 .social-list svg circle {
 	fill      : rgba(255, 255, 255, 0.5);
 	transition: all 0.5s;
-}
-
-/* ------------------------------------------------------------------- 
- * ## blog card
- * ------------------------------------------------------------------- */
-.blog-card__header {
-	margin-bottom: var(--vspace-0_75);
-}
-
-.blog-card__cat-links {
-	font-size: var(--text-sm);
-}
-
-.blog-card__cat-links a {
-	color: var(--color-1);
-}
-
-.blog-card__title {
-	margin     : 0;
-	line-height: 1.1574;
-}
-
-.blog-card__title a {
-	color: var(--color-text-dark);
-}
-
-/* --------------------------------------------------------------------
- * ## testimonials
- * -------------------------------------------------------------------- */
-.s-testimonials {
-	padding-top     : var(--vspace-4);
-	padding-bottom  : var(--vspace-3);
-	background-color: var(--color-3);
-}
-
-.s-testimonials__header {
-	margin-bottom: var(--vspace-1);
-}
-
-.s-testimonials__header .text-pretitle {
-	margin-bottom: var(--vspace-0_125);
-}
-
-.s-testimonials__header h3 {
-	margin-top: 0;
-}
-
-.s-testimonials .testimonials {
-	margin: 0;
-}
-
-.testimonials {
-	margin-top: var(--vspace-3);
-	position  : relative;
-}
-
-.testimonials__slider {
-	padding-bottom: var(--vspace-2_5);
-}
-
-.testimonials__author {
-	display      : inline-block;
-	min-height   : var(--vspace-2);
-	margin-bottom: var(--vspace-0_625);
-	padding-left : calc(2.25 * var(--space));
-	position     : relative;
-}
-
-.testimonials__avatar {
-	width        : var(--vspace-1_75);
-	height       : var(--vspace-1_75);
-	border-radius: 100%;
-	outline      : none;
-	position     : absolute;
-	top          : 0;
-	left         : 0;
-}
-
-.testimonials__cite {
-	display: block;
-}
-
-.testimonials__cite strong,
-.testimonials__cite span {
-	font-style: normal;
-	transition: all 0.3s ease-in-out;
-}
-
-.testimonials__cite strong {
-	font-size  : calc(var(--text-size) * 0.9);
-	font-weight: 500;
-	line-height: var(--vspace-0_75);
-	color      : var(--color-text-dark);
-}
-
-.testimonials__cite span {
-	display    : block;
-	font-size  : var(--text-xs);
-	font-weight: 400;
-	line-height: var(--vspace-0_5);
-	color      : var(--color-text-light);
-}
-
-/* ------------------------------------------------------------------- 
- * ## swiper overrides
- * ------------------------------------------------------------------- */
-.swiper-container .swiper-pagination-bullets .swiper-pagination-bullet {
-	margin: 0 1.2rem;
-}
-
-.swiper-container .swiper-pagination-bullet {
-	width     : 8px;
-	height    : 8px;
-	background: var(--color-gray-12);
-	opacity   : 1;
-}
-
-.swiper-container .swiper-pagination-bullet-active {
-	background: var(--color-gray-19);
-	opacity   : 1;
-}
-
-.swiper-container .swiper-pagination-bullet:only-child {
-	visibility: hidden;
 }
 
 /* ------------------------------------------------------------------- 
@@ -2970,8 +2850,6 @@ td:last-child {
 
 /* ===================================================================
  * # GRID-BASED LAYOUTS
- *
- *
  * ------------------------------------------------------------------- */
 
 /* --------------------------------------------------------------------
@@ -4101,7 +3979,6 @@ td:last-child {
 	.ss-go-top {
 		bottom: var(--vspace-0_25);
 	}
-	
 }
 
 @media screen and (max-width: 1000px) {
