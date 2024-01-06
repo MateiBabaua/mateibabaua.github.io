@@ -4026,6 +4026,7 @@ td:last-child {
 }
 
 .s-footer .link-list {
+	list-style : none;
 	margin-left: 0;
 }
 
@@ -4049,7 +4050,7 @@ td:last-child {
 .ss-go-top {
 	z-index : 2;
 	position: absolute;
-	bottom  : -0.8rem;
+	bottom  : 20px;
 	right   : var(--gutter);
 }
 
