@@ -397,9 +397,14 @@ table {
 html {
 	scroll-behavior: smooth;
 }
-section {
 
+.centered-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	padding-left: 255px;
 }
+
 
 
 
@@ -673,6 +678,7 @@ section {
 		flex : none;
 		width: 100%;
 	}
+
 }
 
 /* --------------------------------------------------------------------
@@ -813,6 +819,10 @@ section {
 	.mob-12 {
 		flex : none;
 		width: 100%;
+	}
+	
+	.centered-button {
+		padding: 0 0 0 0;
 	}
 }
 
@@ -2600,53 +2610,6 @@ td:last-child {
 	width: 100%;
 }
 
-/* --------------------------------------------------------------------
- * ## stats tabs
- * -------------------------------------------------------------------- */
-.stats-tabs {
-	padding: 0;
-	margin : var(--vspace-1) 0;
-}
-
-.stats-tabs li {
-	display     : inline-block;
-	margin      : 0 1.6rem var(--vspace-0_5) 0;
-	padding     : 0 1.5rem 0 0;
-	border-right: 1px solid var(--color-border);
-}
-
-.stats-tabs li:last-child {
-	margin : 0;
-	padding: 0;
-	border : none;
-}
-
-.stats-tabs li a {
-	display    : block;
-	font-family: var(--font-1);
-	font-size  : var(--text-lg);
-	font-weight: 600;
-	line-height: var(--vspace-1_5);
-	border     : none;
-	color      : var(--color-text-dark);
-}
-
-.stats-tabs li a:hover {
-	color: var(--color-1);
-}
-
-.stats-tabs li a em {
-	display    : block;
-	margin     : 0;
-	font-family: var(--font-1);
-	font-size  : var(--text-sm);
-	line-height: var(--vspace-0_5);
-	font-weight: 400;
-	font-style : normal;
-	color      : var(--color-text-light);
-}
-
-
 
 /* ===================================================================
  * # PROJECT-WIDE SHARED STYLES
@@ -2822,6 +2785,7 @@ td:last-child {
 	.text-display-title {
 		font-size: clamp(4rem, 8vw, var(--text-display-2));
 	}
+
 }
 
 @media screen and (max-width: 800px) {
@@ -3871,6 +3835,11 @@ td:last-child {
 		width       : 100%;
 		margin-right: 0;
 	}
+	
+	.s-cta {
+		padding-bottom: 50px;
+	}
+
 }
 
 
@@ -3930,6 +3899,7 @@ td:last-child {
 	color: var(--color-3);
 }
 
+
 /* ------------------------------------------------------------------- 
  * ## go top
  * ------------------------------------------------------------------- */
@@ -3974,18 +3944,57 @@ td:last-child {
  * responsive:
  * footer
  * ------------------------------------------------------------------- */
+
+@media screen and (min-width: 1201px) {
+	.s-footer__site-links {
+		padding-top: 100px;
+	}
+	
+	.centered-button {
+		padding: 0 0 0 0;
+		padding-left: 15vw;	
+	}
+	
+	.s-footer {
+		padding-top: 0;
+	}
+
+}
+
 @media screen and (max-width: 1200px) {
 
 	.ss-go-top {
 		bottom: var(--vspace-0_25);
 	}
+
+	.centered-button {
+		padding: 0 0 0 0;
+		padding-left: calc(50vw - 40%);		
+	}
+
+	.s-footer {
+		padding-top: 0;
+	}
+
 }
+
 
 @media screen and (max-width: 1000px) {
 	.s-footer__about>* {
 		width: 100%;
 	}
+
+	.centered-button {
+		padding: 0 0 0 0;
+		padding-left: calc(50vw - 40%);
+	}
+
+	.s-footer {
+		padding-top: 0;
+	}
+
 }
+
 
 @media screen and (max-width: 600px) {
 
@@ -4002,6 +4011,18 @@ td:last-child {
 	.ss-go-top svg {
 		height: var(--vspace-0_75);
 		width : var(--vspace-0_75);
+	}
+
+	.centered-button {
+		padding: 0 0 0 0;
+		padding-left: calc(50vw - 50%);
+	}
+}
+
+@media screen and (max-width: 400px) {
+	.centered-button {
+		padding: 0 0 0 0;
+		padding-left: 115%;
 	}
 }
 
