@@ -3418,6 +3418,8 @@ td:last-child {
 
 .s-intro__content-media-inner {
 	position: relative;
+	box-shadow: 0px 0px 25px rgba(3, 7, 18, 0.50), 0px 0px 100px rgba(3, 7, 18, 0.50);
+
 }
 
 .s-intro__content-media img {
@@ -3457,7 +3459,7 @@ td:last-child {
 	height          : 1px;
 	background-color: var(--line-color);
 	position        : absolute;
-	right           : 0;
+	right           : 0;own
 }
 
 .s-intro__content-media .lines::before {
@@ -3479,6 +3481,7 @@ td:last-child {
 	z-index    : 2;
 	grid-column: 1/10;
 	grid-row   : 2;
+
 }
 
 .s-intro__scroll-down a {
@@ -3504,6 +3507,7 @@ td:last-child {
 	border-radius  : 50%;
 	border         : 1px solid var(--color-1);
 	margin-right   : var(--vspace-0_5);
+
 }
 
 .s-intro__scroll-down svg {
