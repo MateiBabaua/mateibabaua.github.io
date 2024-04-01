@@ -548,6 +548,7 @@ html {
 .xl-12 {
 	flex : none;
 	width: 100%;
+	padding: 0;
 }
 
 /* --------------------------------------------------------------------
@@ -3786,7 +3787,7 @@ td:last-child {
  * # EXPERTISE
  * ------------------------------------------------------------------- */
 .s-expertise {
-	padding-top   : var(--vspace-6);
+	padding-top   : var(--vspace-5);
 	padding-bottom: var(--vspace-5);
 }
 
